@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xxxxxxxxxx - Authentic Dining</title>
     <style>
-        /* === AESTHETICS & THEME === */
-        :root {
+        :root
+        {
             --bg-color: #0f0f0f;
             --text-color: #f0f0f0;
-            --highlight: #e6b31e; /* Gold highlight */
+            --highlight: #e6b31e;
             --card-bg: #1a1a1a;
             --nav-bg: rgba(15, 15, 15, 0.95);
         }
-
-        * {
+        *
+        {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-
-        body {
+        body
+        {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
         }
-
-        /* === NAVIGATION === */
-        header {
+        header
+        {
             position: fixed;
             top: 0;
             width: 100%;
@@ -41,34 +40,33 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
+        .logo
+        {
             color: var(--highlight);
             font-size: 2rem;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
-
-        .nav-links {
+        .nav-links
+        {
             list-style: none;
             display: flex;
             gap: 2rem;
         }
-
-        .nav-links a {
+        .nav-links a
+        {
             color: var(--text-color);
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
             transition: color 0.3s ease;
         }
-
-        .nav-links a:hover {
+        .nav-links a:hover
+        {
             color: var(--highlight);
         }
-
-        /* === HERO SECTION === */
-        .hero-section {
+        .hero-section
+        {
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -79,20 +77,20 @@
             padding: 0 20px;
             border-bottom: 1px solid #333;
         }
-
-        .hero-section h2 {
+        .hero-section h2
+        {
             font-size: 4rem;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
         }
-
-        .hero-section p {
+        .hero-section p
+        {
             font-size: 1.5rem;
             margin-bottom: 2rem;
             color: #ddd;
         }
-
-        .btn {
+        .btn
+        {
             background: var(--highlight);
             color: #000;
             padding: 12px 30px;
@@ -102,18 +100,17 @@
             border-radius: 5px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        .btn:hover {
+        .btn:hover
+        {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(230, 179, 30, 0.4);
         }
-
-        /* === SECTION LAYOUTS === */
-        section {
+        section
+        {
             padding: 100px 5%;
         }
-
-        h2.section-title {
+        h2.section-title
+        {
             text-align: center;
             font-size: 2.5rem;
             color: var(--highlight);
@@ -121,49 +118,47 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
-        /* === ABOUT SECTION === */
-        .about-section {
+        .about-section
+        {
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
             font-size: 1.2rem;
             color: #ccc;
         }
-
-        /* === MENU SECTION === */
-        .menu-container {
+        .menu-container
+        {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
-
-        .menu-category {
+        .menu-category
+        {
             background: var(--card-bg);
             padding: 2rem;
             border-radius: 10px;
             border: 1px solid #333;
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
-
-        .menu-category:hover {
+        .menu-category:hover
+        {
             transform: translateY(-5px);
             border-color: var(--highlight);
         }
-
-        .menu-category h3 {
+        .menu-category h3
+        {
             color: var(--highlight);
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             border-bottom: 2px solid #333;
             padding-bottom: 0.5rem;
         }
-
-        .menu-list {
+        .menu-list
+        {
             list-style: none;
         }
-
-        .menu-list li {
+        .menu-list li
+        {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
@@ -171,34 +166,37 @@
             border-bottom: 1px dashed #444;
             padding-bottom: 0.5rem;
         }
-
-        .item-name {
+        .item-name
+        {
             color: var(--text-color);
         }
-
-        .item-price {
+        .item-price
+        {
             color: var(--highlight);
             font-weight: bold;
         }
-
-        /* === FOOTER === */
-        footer {
+        footer
+        {
             text-align: center;
             padding: 2rem;
             background: #0a0a0a;
             color: #777;
             border-top: 1px solid #333;
         }
-
-        /* === RESPONSIVE === */
-        @media (max-width: 768px) {
-            .nav-links { display: none; } /* Simplified for now */
-            .hero-section h2 { font-size: 2.5rem; }
+        @media (max-width: 768px)
+        {
+            .nav-links
+            {
+                display: none;
+            }
+            .hero-section h2
+            {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
 <body>
-
     <header>
         <div class="logo">xxxxxxxxxx</div>
         <ul class="nav-links">
@@ -207,24 +205,19 @@
             <li><a href="#menu">Menu</a></li>
         </ul>
     </header>
-
     <main>
         <section id="hero" class="hero-section">
             <h2>Welcome to xxxxxxxxxx</h2>
             <p>Experience the finest flavors and unforgettable moments.</p>
             <a href="#menu" class="btn">Explore Menu</a>
         </section>
-
         <section id="about" class="about-section">
             <h2 class="section-title">About Us</h2>
             <p>At <strong>xxxxxxxxxx</strong>, we pride ourselves on serving freshly prepared, authentic dishes. Whether you are here for a quick bite or a family feast, our carefully curated menu and warm hospitality guarantee a memorable dining experience.</p>
         </section>
-
         <section id="menu" class="menu-section">
             <h2 class="section-title">Our Menu</h2>
-
             <div class="menu-container">
-                <!-- Starters -->
                 <div class="menu-category">
                     <h3>Starters</h3>
                     <ul class="menu-list">
@@ -240,8 +233,6 @@
                         <li><span class="item-name">Mushroom Pepper Fry</span> <span class="item-price">240 Rs</span></li>
                     </ul>
                 </div>
-
-                <!-- Soups & Salads -->
                 <div class="menu-category">
                     <h3>Soups & Salads</h3>
                     <ul class="menu-list">
@@ -257,8 +248,6 @@
                         <li><span class="item-name">Spicy Som Tam Salad</span> <span class="item-price">190 Rs</span></li>
                     </ul>
                 </div>
-
-                <!-- Vegetarian Main Courses -->
                 <div class="menu-category">
                     <h3>Vegetarian Mains</h3>
                     <ul class="menu-list">
@@ -274,8 +263,6 @@
                         <li><span class="item-name">Baingan Bharta</span> <span class="item-price">230 Rs</span></li>
                     </ul>
                 </div>
-
-                <!-- Non-Vegetarian Main Courses -->
                 <div class="menu-category">
                     <h3>Non-Vegetarian Mains</h3>
                     <ul class="menu-list">
@@ -291,8 +278,6 @@
                         <li><span class="item-name">Chicken Chettinad</span> <span class="item-price">400 Rs</span></li>
                     </ul>
                 </div>
-
-                <!-- Breads & Rice -->
                 <div class="menu-category">
                     <h3>Breads & Rice</h3>
                     <ul class="menu-list">
@@ -308,8 +293,6 @@
                         <li><span class="item-name">Mutton Biryani</span> <span class="item-price">480 Rs</span></li>
                     </ul>
                 </div>
-
-                <!-- Desserts & Beverages -->
                 <div class="menu-category">
                     <h3>Desserts & Beverages</h3>
                     <ul class="menu-list">
@@ -328,11 +311,9 @@
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2026 xxxxxxxxxx. All rights reserved.</p>
         <p>123 Food Street, Culinary City | Phone: +91 98765 43210</p>
     </footer>
-
 </body>
 </html>
